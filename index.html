@@ -162,97 +162,110 @@ nav a:hover {
         </style>
         </section>
 
-        <section>
-            <center>
-        <h2 style="color: brown;">WHY COFFEE DAY CAFE?</h2>
-        <br>
-        <p>
-            At Coffee Day Cafe, every cup tells a story. From hand-picked beans to carefully crafted brews, we believe coffee is more than a drink—it’s a moment of comfort, connection, and creativity.<br>Whether you’re here to work, relax, or catch up with friends, we’ve got the perfect blend waiting for you.
-        </p>
-            </center>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <section class="about-bg">
+    <div class="overlay">
+        <h2>WHY COFFEE DAY CAFE?</h2>
 
-        <div class="block-row">
-
-        <div class="info-block">
-        <h2 style="color: brown;">WHAT MAKES US SPECIAL</h2>
-        <br>
-        <p>
-             <ol>
-            <li>Freshly roasted premium coffee</li>
-            <li>Cozy & calm café atmosphere</li>
-            <li>Friendly baristas, handcrafted brews</li>
-            <li>Perfect spot for work & conversations</li>
-        </ol>
+        <p class="intro-text">
+            At Coffee Day Cafe, every cup tells a story. From hand-picked beans to carefully crafted brews,
+            we believe coffee is more than a drink—it’s a moment of comfort, connection, and creativity.
+            Whether you’re here to work, relax, or catch up with friends, we’ve got the perfect blend waiting for you.
         </p>
-        </div>
 
-        <div class="info-block">
-        <h2 style="color: brown;">MORE THAN JUST COFFEE</h2>
-        <br>
-        <p>
-            We’re not just serving coffee—we’re building a space where ideas grow, friendships form, and mornings feel better. <br> Coffee Day Cafe is your everyday escape, right around the corner.
-        </p>
-        </div>
-        
-        <div class="info-block">
-        <h2 style="color: brown;">START YOUR COFFEE JOURNEY WITH US</h2>
-        <br>
-        <p>
-            Discover rich flavors, smooth blends, and the aroma that keeps you coming back. <br> Scroll down to explore our menu and find your new favorite cup ☕
-        </p>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="cards">
+            <div class="card">
+                <h3>WHAT MAKES US SPECIAL</h3>
+                <ul>
+                    <li>Freshly roasted premium coffee</li>
+                    <li>Cozy & calm café atmosphere</li>
+                    <li>Friendly baristas, handcrafted brews</li>
+                    <li>Perfect spot for work & conversations</li>
+                </ul>
+            </div>
 
+            <div class="card">
+                <h3>MORE THAN JUST COFFEE</h3>
+                <p>
+                    We’re not just serving coffee—we’re building a space where ideas grow,
+                    friendships form, and mornings feel better.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>START YOUR COFFEE JOURNEY WITH US</h3>
+                <p>
+                    Discover rich flavors, smooth blends, and the aroma that keeps you coming back ☕
+                </p>
+            </div>
         </div>
     </div>
-    </section> 
+</section>
+ 
     <style>
         
-.block-row {
-  display: flex;
-  gap: 30px;              /* space between blocks */
-  justify-content: center;
-  align-items: flex-start;
-  margin: 40px auto;
-  max-width: 1100px;
+.about-bg {
+    background-image: url("coffeebg.jpg"); /* your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 40px;
+    position: relative;
 }
 
-.info-block {
-  max-width: 350px;
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  font-family: Georgia, serif;
-  transition: transform 0.3s ease;
+/* Dark overlay for readability */
+.overlay {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 60px 40px;
+    border-radius: 10px;
 }
 
-.info-block:hover {
-  transform: translateY(-8px);
+/* Headings */
+.about-bg h2 {
+    text-align: center;
+    color: #f5c08a;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.info-block h3 {
-  color: #7b2d26;
-  margin-bottom: 12px;
-  font-size: 20px;
+/* Paragraph */
+.intro-text {
+    color: #fff;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 18px;
 }
 
-.info-block p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #333;
+/* Cards layout */
+.cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+/* Individual card */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #9c2f1c;
+    margin-bottom: 15px;
+}
+
+.card p,
+.card li {
+    color: #333;
+    line-height: 1.6;
+}
+
    </style>
 
     <!-- ===== MENU ===== -->
